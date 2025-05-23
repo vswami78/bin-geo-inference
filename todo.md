@@ -19,26 +19,26 @@
   - Cumulative % logic per BIN
 - [X] Write unit tests for correct threshold coverage
 
-**[ ] Unit 4: Filter Low-Support BINs**
-- [ ] Add `filter_supported_bins(df)` to `coverage.py`
+**[X] Unit 4: Filter Low-Support BINs**
+- [X] Add `filter_supported_bins(df)` to `coverage.py`
   - Drop rows below `MIN_TXNS`
-- [ ] Test BIN exclusion logic
+- [X] Test BIN exclusion logic
 
-**[ ] Unit 5: Compare With Vendor Mapping**
-- [ ] Load vendor BIN-country mapping
-- [ ] Implement `flag_discrepancies(inferred_df, vendor_df)` in `compare_vendor.py`
+**[X] Unit 5: Compare With Vendor Mapping**
+- [X] Load vendor BIN-country mapping (Note: Assumed loaded and passed as DataFrame to `flag_discrepancies`)
+- [X] Implement `flag_discrepancies(inferred_df, vendor_df)` in `compare_vendor.py`
   - Flag where top inferred country ≠ vendor's
-- [ ] Unit test with dummy data
+- [X] Unit test with dummy data
 
-**[ ] Unit 6: Write to Monthly Delta Table**
-- [ ] Implement `write_delta(df, month)` in `write_output.py`
+**[X] Unit 6: Write to Monthly Delta Table**
+- [X] Implement `write_delta(df, month)` in `write_output.py`
   - Append/merge with partition by `snapshot_month`
-- [ ] Validate output format and schema
+- [X] Validate output format and schema (Note: Validation done via unit tests reading back data and checking schema)
 
-**[ ] Unit 7: Build Pipeline Orchestration Script**
-- [ ] Create `bin_geo_pipeline.py` or Databricks notebook
+**[X] Unit 7: Build Pipeline Orchestration Script**
+- [X] Create `bin_geo_pipeline.py` or Databricks notebook
   - Run steps in sequence with logging & error capture
 
-**[ ] Unit 8: Add Data Quality & Regression Tests**
-- [ ] Create `tests/test_regression.py`
+**[X] Unit 8: Add Data Quality & Regression Tests**
+- [X] Create `tests/test_regression.py`
   - Validate schema, nulls, valid countries, no duplicate BIN-country
