@@ -1,23 +1,23 @@
 ### `todo.md`: BIN Geolocation Pipeline Tasks
 
-**[ ] Unit 0: Define Project Config & Schema**
-- [ ] Create `config.py`
+**[X] Unit 0: Define Project Config & Schema**
+- [X] Create `config.py`
   - Constants: `MIN_TXNS`, `COVERAGE_PCT`, delta paths, table names
   - Spark `StructType` for transaction input
 
-**[ ] Unit 1: Load & Filter Transaction Data**
-- [ ] Implement `load_filtered(month)` in `load_filter.py`
+**[X] Unit 1: Load & Filter Transaction Data**
+- [X] Implement `load_filtered(month)` in `load_filter.py`
   - Filter non-fraud, non-null billing country, valid BIN
-- [ ] Write unit tests for filtering logic
+- [X] Write unit tests for filtering logic
 
-**[ ] Unit 2: Aggregate Country Counts Per BIN**
-- [ ] Create `country_counts(df)` in `aggregate.py`
+**[X] Unit 2: Aggregate Country Counts Per BIN**
+- [X] Create `country_counts(df)` in `aggregate.py`
   - Output: `BIN`, `country`, `txn_count`, `bin_total`
 
-**[ ] Unit 3: Select Countries Covering ≥95% Usage**
-- [ ] Implement `select_top_countries(df)` in `coverage.py`
+**[X] Unit 3: Select Countries Covering ≥95% Usage**
+- [X] Implement `select_top_countries(df)` in `coverage.py`
   - Cumulative % logic per BIN
-- [ ] Write unit tests for correct threshold coverage
+- [X] Write unit tests for correct threshold coverage
 
 **[ ] Unit 4: Filter Low-Support BINs**
 - [ ] Add `filter_supported_bins(df)` to `coverage.py`
