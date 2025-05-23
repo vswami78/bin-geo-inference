@@ -85,7 +85,3 @@ We aim to infer the geographic origin (country) of credit card BINs using billin
 * Regression tests:
 
   * Compare outputs to previous runs to detect drift or anomalies
-
----
-
-Next step: generate `prompt_plan.md`. Would you like me to begin breaking this into codegen units?
