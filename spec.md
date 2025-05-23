@@ -1,7 +1,4 @@
 # spec.md
-Perfect. Based on your answers, here’s the draft of `spec.md` following Harper Reed’s LLM codegen workflow:
-
----
 
 ### `spec.md`: BIN Geolocation Inference Pipeline
 
